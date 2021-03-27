@@ -17,7 +17,7 @@
                 </div>
         </div>
     </header>
-    <div class="form-content">
+    <div class="form-content header">
         <form class="form" action="#" onreset="reset()" onsubmit="save(); return false">
             <div class="form-head">
                 PERSON ADDRESS FORM
@@ -29,6 +29,26 @@
             <div class="row-content">
                 <label class="label text" for="address"></label>
                 <textarea id="address" class="input" name="address" placeholder="Address" style="height: 100px;"></textarea>
+            </div>
+            
+            <div class="suraj-content">
+                <select id="select City" name="select City" >
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Kolkata">Kolkata</option>>
+
+                </select>
+                <select id="select state" name="select state">
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="panjab">panjab</option>
+                    
+                </select>
+                <input class="suraj-text" type="text" id="zipcode" name="zipcode" placeholder="zipcode">
             </div>
         </form>
     </div>

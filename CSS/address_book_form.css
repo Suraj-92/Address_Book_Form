@@ -32,15 +32,15 @@ body {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: #82a70c;
+    color: skyblue;
     text-transform: capitalize;
 }
 
 .address-book {
-    color: #42515f;
+    color: black;
 }
 
-*{ box-sizing: border-box;}
+/* *{ box-sizing: border-box;} */
 
 .form-content {
     min-height: calc(100% - 80px);
@@ -48,15 +48,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+    border: 0px solid;
 }
 
 .form {
-    width: 65%;
+    width: 45%;
     padding: 44px 50px;
     background: white;
-    box-shadow: 0px 3px 6px grey;
-    border: 1px solid white;
+    box-shadow: 5px 5px 3px black;
+    border: 2px solid ;
     opacity: 1;
     margin-top: 10px;
     border-radius: 8px;
@@ -67,15 +67,17 @@ body {
     justify-content: center;
     font: normal normal bold 24px/37px Roboto;
     letter-spacing: 0px;
-    color: #42515f;
+    color: red;
     text-transform: capitalize;
     opacity: 1;
-    padding-bottom: 20px;
-    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
 }
 
 .row-content {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -84,14 +86,14 @@ body {
     flex-flow: wrap;
 }
 
-.label {
+/* .label {
     width: 20%;
-}
+} */
 
-label {
+/* label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-}
+} */
 
 .text {
     font-size: 15px;
@@ -103,7 +105,32 @@ label {
 .input {
     width: 80%;
     padding: 12px;
-    border: 2px solid blue;
+    border: 2px solid black;
     border-radius: 10px;
     resize: vertical;
+}
+
+select {
+    padding: 8px;
+    border-radius: 6px;
+    font: normal normal 16px Roboto;
+    resize: vertical;
+    border: 1px solid;
+    letter-spacing: 0px;
+    color: #8f98a1;
+    background-color: transparent;
+}
+
+.select-content {
+    padding-top: 20px;
+}
+
+.suraj-content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    width: 92%;
+    box-sizing: border-box;
+    padding-left: 8%;
+    padding-top: 10px;
 }
