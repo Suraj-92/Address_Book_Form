@@ -160,8 +160,15 @@ button {
     cursor: pointer;
 }
   
-/* .submitButton {
+.submitButton {
     border: none;
     background-color: #f5f5f5;
     margin-right: 30px;
-} */
+}
+  
+@media screen and (max-width: 857px) {
+    .submitButton {
+    background-color: green;
+    margin-right: 26px;
+    }
+}

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Book Form</title>
     <link rel="stylesheet" href="../CSS/address_book_form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="../JS/Address_Book_Data.js"></script>
 </head>
 <body>
     <header class="header-content header">
@@ -32,7 +34,7 @@
             </div>
             
             <div class="suraj-content">
-                <select id="select City" name="select City" >
+                <select id="City" name="select City" >
                     <option value="Pune">Pune</option>
                     <option value="Mumbai">Mumbai</option>
                     <option value="Chennai">Chennai</option>
@@ -41,7 +43,7 @@
                     <option value="Kolkata">Kolkata</option>>
 
                 </select>
-                <select id="select state" name="select state">
+                <select id="State" name="State">
                     <option value="Maharastra">Maharastra</option>
                     <option value="Kerala">Kerala</option>
                     <option value="Delhi">Delhi</option>
@@ -52,16 +54,35 @@
             </div>
             <div class="row-content row-content-name">
                 <label class="label text"></label>
-                <input class="input" type="text" id="phone number" name="phone number" placeholder="phone number" required>
+                <input class="input" type="text" id="phonenumber" name="phonenumber" placeholder="phonenumber" required>
             </div>
             <div class="buttonParent">
                 <!-- <button><a href="./home.html" class="resetButton button cancelButton">Cancel</a></button> -->
                 <div class="Add-reset">
-                    <button type="add" class="button submitButton" id="submitButton">Add</button>
+                    <button type="add" class="button submitButton" id="submitButton" onclick="validate()">Add</button>
                     <button type="reset" class="button resetButton" id="resetButton">Reset</button>
                 </div>
             </div>
         </form>
+        <script>
+            function validate(){
+                var username = document.getElementById("fullname").value;
+                var password = document.getElementById("phonenumber").value;
+                if(username != "" && password != ""){
+                    if(username == "Suraj Narayan Temkar" && password == "9767354558"){
+                        alert("Login Successful!");
+                        return false;
+                    }
+                    else{
+                        alert("Username or Password is Invalid!");
+                    }
+                }
+                else{
+                    alert("Enter Username and Password!");
+                }
+
+            }
+        </script>
     </div>
 </body>
 </html>
